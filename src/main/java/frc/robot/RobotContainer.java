@@ -42,10 +42,10 @@ public class RobotContainer {
     @Getter public static final CommandSwerveDrivetrain drivetrain = TunerConstants.createDrivetrain();
     //@Getter public static final Shooter shooter = new Shooter();
     @Getter public static final NewVision vision = new NewVision();
-    public static final TestTurret turret = new TestTurret();
+    @Getter public static final TestTurret turret = new TestTurret();
 
-    public static final FlyWheel flywheel = new FlyWheel();
-    public static final Transition transition = new Transition();
+    @Getter public static final FlyWheel flywheel = new FlyWheel();
+    @Getter public static final Transition transition = new Transition();
 
     
     public RobotContainer() {
