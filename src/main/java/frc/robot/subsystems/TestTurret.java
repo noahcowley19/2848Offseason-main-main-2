@@ -82,6 +82,10 @@ public class TestTurret extends SubsystemBase{
            correction = MathUtil.angleModulus(angleToHub-heading);
      
            setTarget(correction);
+
+
+
+      
            
      
      
@@ -137,6 +141,15 @@ public class TestTurret extends SubsystemBase{
      public boolean atTarget()
      {
         return Math.abs(error) < Math.toRadians(2);
+     }
+
+
+
+     public double getAngleToHub(){
+      return MathUtil.angleModulus(robotToHub.getAngle().getRadians());
+     }
+     public double getDistanceToHub(){
+      return MathUtil.angleModulus(robotToHub.getAngle().getRadians());
      }
 
 
